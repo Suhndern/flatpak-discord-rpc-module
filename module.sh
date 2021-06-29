@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Test that ${XDG_RUNTIME_DIR} is not empty
-test -n ${XDG_RUNTIME_DIR} || exit 1
+test -n ${XDG_RUNTIME_DIR} || return
 
 # Hook up the Discord IPC sockets
 for i in {0..9}; do
